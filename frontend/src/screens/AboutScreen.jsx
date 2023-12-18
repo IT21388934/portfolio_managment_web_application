@@ -1,6 +1,8 @@
 import "./aboutScreen.css";
 import aboutMeImage from "../assets/images/mainImg.png";
 import { motion } from "framer-motion";
+import { VscTriangleRight } from "react-icons/vsc";
+import skillDta from "../data/skillDta";
 
 export default function AboutScreen() {
   return (
@@ -31,12 +33,11 @@ export default function AboutScreen() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            Hello! I am Rumesh Siriwardhana, a web developer, graphic designer,
-            UI/UX designer, and mobile app developer. Currently, I am pursuing a
-            degree in software engineering. With a passion for creating
-            innovative and user-friendly digital experiences, I strive to blend
-            my technical skills and design expertise to deliver impactful
-            solutions.
+            👋 Hello! I am Rumesh Siriwardhana, a versatile web and mobile app
+            developer, graphic designer, and aspiring software engineer.
+            Currently pursuing a degree in software engineering, I blend
+            technical expertise with design skills to craft innovative and
+            user-friendly digital experiences.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -100 }}
@@ -47,11 +48,10 @@ export default function AboutScreen() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            When I am not coding or designing, you can find me exploring new
-            technologies, reading books, or honing my skills through personal
-            projects. I value collaboration, creativity, and attention to
-            detail, and I am always excited to take on new challenges and work
-            on exciting projects.
+            🚀 Passionate about creating impactful solutions, I thrive on
+            challenges and value collaboration, creativity, and attention to
+            detail. When not coding or designing, I explore new technologies,
+            read, and work on personal projects.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -100 }}
@@ -62,11 +62,11 @@ export default function AboutScreen() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            Throughout my journey, I have gained valuable experience in web
-            development, creating visually appealing designs, and developing
-            intuitive user interfaces. I enjoy bringing ideas to life and
-            solving complex problems using modern technologies and industry best
-            practices.
+            💻 Experienced in web development, mobile app development and UI/UX
+            design, I enjoy bringing ideas to life and solving complex problems
+            using modern technologies. A lifelong learner, I stay updated with
+            the latest trends and industry best practices to deliver
+            high-quality results that exceed expectations.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -100 }}
@@ -77,11 +77,23 @@ export default function AboutScreen() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            As a lifelong learner, I am constantly expanding my knowledge and
-            staying up-to-date with the latest trends and advancements in the
-            field. I believe in continuous improvement and strive to deliver
-            high-quality results that exceed client expectations.
+            Here languages and technologies I have been working with :
           </motion.p>
+          <div className="skillsContainer">
+            {/* {skillDta.map((skill) => (
+              <div className="skill">
+                <VscTriangleRight className="triangle" />
+                <div className="skillName">{skill.name}</div>
+              </div>
+            ))} */}
+
+            {skillDta.map((skill) => (
+              <div className="skill" key={skill.id}>
+                <VscTriangleRight className="triangle" />
+                <div className="skillName">{skill.name}</div>
+              </div>
+            ))}
+          </div>
         </div>
         <motion.div
           className="aboutMeImageContainer"

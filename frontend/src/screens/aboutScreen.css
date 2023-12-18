@@ -31,6 +31,7 @@
   align-content: center;
   margin-left: 5%;
   margin-right: 5%;
+  padding: 20px 5%;
 }
 
 .aboutMeContent {
@@ -44,7 +45,7 @@
 
 .aboutMeText {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   /* letter-spacing: 2px; */
   /* margin: 20px; */
@@ -76,4 +77,28 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.skillsContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a 4-column grid */
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  /* margin: 20px; */
+  width: 100%;
+}
+.skillName {
+  margin-left: 10px;
+}
+
+.triangle {
+  color: #5ce6d4;
 }
