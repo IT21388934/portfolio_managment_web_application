@@ -1,0 +1,73 @@
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  font-family: "Open Sans", sans-serif;
+  background-color: aqua;
+} */
+.whiteText {
+  color: white;
+}
+h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+nav {
+  /* width: 100%; */
+  padding: 5px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+.navigations {
+  /* width: 30%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  visibility: hidden;
+}
+
+.normal {
+  display: flex;
+  padding: 0 20px 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.normal li {
+  padding: 0px 50px;
+}
+
+.normal li:last-child {
+  padding: 0 0 0 40px;
+}
+.dropdown {
+  visibility: hidden;
+  height: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 5px;
+  border: 2px solid transparent;
+  transition: color 0.3s ease, padding 0.3s ease, border 0.3s ease; /* Add a transition to color, padding, and border properties over 0.3 seconds with ease easing */
+}
+
+nav ul li a:hover {
+  color: #5ce6d4;
+  padding: 8px; /* Example: Increase padding on hover */
+  border: 2px solid #5ce6d4;
+  border-radius: 5px;
+}

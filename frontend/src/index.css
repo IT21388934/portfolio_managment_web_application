@@ -1,0 +1,29 @@
+body {
+  background-color: #003352;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  /* color: #333; */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  color: white;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0; /* Set the width to 0 to hide the scrollbar */
+}
+
+/* For Firefox */
+/* Note: Firefox does not support the ::-webkit-scrollbar pseudo-element, 
+   so you'll need to use a different approach */
+body {
+  scrollbar-width: none; /* Firefox 64 and later */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+/* For Internet Explorer */
+/* Note: Internet Explorer does not support the ::-webkit-scrollbar pseudo-element, 
+   and the properties for scrollbar customization are limited */
+body {
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}

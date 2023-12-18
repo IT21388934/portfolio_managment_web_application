@@ -1,0 +1,140 @@
+.firstContainer {
+  height: 100vh;
+  padding: 0px 80px;
+  background-image: url("../assets/images/firstContainerBg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  /* background-color: blue; */
+  width: 60%;
+  padding-bottom: 200px;
+}
+
+.socialMedias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.smallText {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #5ce6d4;
+}
+
+.animatedText {
+  /* font-size: 40px; */
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #5ce6d4;
+  margin-top: 20px;
+}
+
+.staticText {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 20px;
+}
+
+.description {
+  max-width: 550px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 40px;
+  line-height: 25px;
+}
+
+.btnContainer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* width: 300px; */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #5ce6d4;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #5ce6d4;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.btn:hover {
+  background-color: #5ce6d4;
+  color: #003352;
+}
+
+.icon {
+  font-size: 20px;
+  color: white;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #003352;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* margin-top: 50px; */
+}
+.icon:hover {
+  background-color: #5ce6d4;
+  color: #003352;
+  cursor: pointer;
+}
+
+.hoveredIcon {
+  font-size: 20px;
+  color: #003352;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #5ce6d4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.socialMediaName {
+  font-size: 12px;
+  color: #003352;
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* width: 50px; */
+  background-color: #5ce6d4;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
