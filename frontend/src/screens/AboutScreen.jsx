@@ -78,22 +78,22 @@ export default function AboutScreen() {
             }}
           >
             Here languages and technologies I have been working with :
-          </motion.p>
-          <div className="skillsContainer">
-            {/* {skillDta.map((skill) => (
+            <div className="skillsContainer">
+              {/* {skillDta.map((skill) => (
               <div className="skill">
                 <VscTriangleRight className="triangle" />
                 <div className="skillName">{skill.name}</div>
               </div>
             ))} */}
 
-            {skillDta.map((skill) => (
-              <div className="skill" key={skill.id}>
-                <VscTriangleRight className="triangle" />
-                <div className="skillName">{skill.name}</div>
-              </div>
-            ))}
-          </div>
+              {skillDta.map((skill) => (
+                <div className="skill" key={skill.id}>
+                  <VscTriangleRight className="triangle" />
+                  <div className="skillName">{skill.name}</div>
+                </div>
+              ))}
+            </div>
+          </motion.p>
         </div>
         <motion.div
           className="aboutMeImageContainer"
