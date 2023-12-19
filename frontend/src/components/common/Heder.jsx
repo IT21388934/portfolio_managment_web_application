@@ -54,7 +54,7 @@ export default function Header() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <a href="#">Projects</a>
+              <Link to="/projects">Projects</Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -100 }}

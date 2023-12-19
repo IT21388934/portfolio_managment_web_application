@@ -1,8 +1,9 @@
 import "./aboutScreen.css";
-import aboutMeImage from "../assets/images/mainImg.png";
+// import aboutMeImage from "../assets/images/mainImg.png";
 import { motion } from "framer-motion";
-import { VscTriangleRight } from "react-icons/vsc";
-import skillDta from "../data/skillDta";
+// import { VscTriangleRight } from "react-icons/vsc";
+// import skillDta from "../data/skillDta";
+import Skills from "../components/other/skills";
 
 export default function AboutScreen() {
   return (
@@ -86,16 +87,18 @@ export default function AboutScreen() {
               </div>
             ))} */}
 
-              {skillDta.map((skill) => (
+              {/* {skillDta.map((skill) => (
                 <div className="skill" key={skill.id}>
                   <VscTriangleRight className="triangle" />
                   <div className="skillName">{skill.name}</div>
                 </div>
-              ))}
+              ))} */}
+
+              <Skills />
             </div>
           </motion.p>
         </div>
-        <motion.div
+        {/* <motion.div
           className="aboutMeImageContainer"
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,7 +109,7 @@ export default function AboutScreen() {
           }}
         >
           <img className="aboutMeImage" src={aboutMeImage} alt="" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

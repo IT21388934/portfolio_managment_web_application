@@ -23,17 +23,6 @@
   margin-right: 20px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 20px 5%;
-}
-
 .aboutMeContent {
   display: flex;
   flex-direction: row;
@@ -50,7 +39,7 @@
   /* letter-spacing: 2px; */
   /* margin: 20px; */
   /* text-align: center; */
-  width: 50%;
+  /* width: 50%; */
   line-height: 28px;
 }
 .aboutMeImageContainer {
