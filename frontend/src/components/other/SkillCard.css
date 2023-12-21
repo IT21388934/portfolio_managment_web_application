@@ -1,0 +1,51 @@
+.skillCard {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #052444;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.skillIcon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.skillCard__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* 
+.skillCard:hover {
+  background-color: #5ce6d4;
+  cursor: pointer;
+  color: #052444;
+} */
+
+.skillCard__overlay {
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #5ce6d4;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #052444;
+}
+
+.skillCard__pres {
+  font-size: 50px;
+  font-weight: 700;
+}

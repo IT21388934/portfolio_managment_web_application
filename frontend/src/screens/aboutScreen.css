@@ -1,6 +1,6 @@
 .titleSection {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   padding: 10px;
@@ -29,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  margin: 40px;
+  margin: 5px 40px;
 }
 
 .aboutMeText {
@@ -69,11 +69,13 @@
 }
 
 .skillsContainer {
-  width: 80%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates a 4-column grid */
+  grid-template-columns: repeat(4, 1fr); /* Creates a 4-column grid */
   gap: 20px;
   padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
 }
 
 .skill {

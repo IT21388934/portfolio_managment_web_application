@@ -10,7 +10,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import AboutScreen from "./AboutScreen";
-
+import Skills from "../components/other/skills";
 // import { useState } from "react";
 export default function HomeScreen() {
   const [isGithubHover, setIsGithubHover] = useState(false);
@@ -194,6 +194,7 @@ export default function HomeScreen() {
       </div>
       {/* </div> */}
       <AboutScreen />
+      <Skills />
     </>
   );
 }
