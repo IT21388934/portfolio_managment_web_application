@@ -42,7 +42,7 @@ export default function Header() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <Link to="/about">About</Link>
+              <Link to="/skills">Skills</Link>
             </motion.li>
 
             <motion.li

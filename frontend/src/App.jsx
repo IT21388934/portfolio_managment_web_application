@@ -13,6 +13,7 @@ import Header from "./components/common/Heder";
 import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ProjectScreen from "./screens/ProjectScreen";
+import Skills from "./components/other/skills";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -38,6 +39,7 @@ function App() {
             <Route path="/" element={<HomeScreen />} />
             <Route path="/about" element={<AboutScreen />} />
             <Route path="/projects" element={<ProjectScreen />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
         </BrowserRouter>
       )}
