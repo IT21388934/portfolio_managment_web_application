@@ -10,7 +10,7 @@ body {
 }
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 0; /* Set the width to 0 to hide the scrollbar */
+  width: 1px; /* Set the width to 0 to hide the scrollbar */
 }
 
 /* For Firefox */

@@ -1,13 +1,10 @@
-/* header {
-  position: fixed;
-  top: 0;
-  left: 0;
+.header {
   width: 100%;
-  z-index: 100;
-  font-family: "Open Sans", sans-serif;
-  background-color: aqua;
-} */
-
+  height: 80px;
+  background-color: #01172e;
+  position: fixed;
+  z-index: 999;
+}
 .whiteText {
   color: white;
 }
@@ -45,6 +42,7 @@ nav {
 }
 .normal li {
   padding: 0px 50px;
+  cursor: pointer;
 }
 
 .normal li:last-child {
