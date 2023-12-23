@@ -3,6 +3,7 @@
 *.env.example
 *.env.local
 *.env.staging
+backend/.env
 logs
 *.log
 npm-debug.log*
