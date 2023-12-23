@@ -9,9 +9,7 @@ import { TiSocialFlickr } from "react-icons/ti";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import AboutScreen from "./AboutScreen";
-import Skills from "../components/other/skills";
-import ProjectScreen from "./ProjectScreen";
+import Header from "../components/common/Header";
 // import { useState } from "react";
 export default function HomeScreen() {
   const [isGithubHover, setIsGithubHover] = useState(false);
@@ -21,6 +19,7 @@ export default function HomeScreen() {
 
   return (
     <>
+      <Header />
       {/* <div className="container"> */}
       <div className="container">
         <div className="section">
@@ -193,10 +192,6 @@ export default function HomeScreen() {
           </div>
         </div>
       </div>
-      {/* </div> */}
-      <AboutScreen />
-      <Skills />
-      <ProjectScreen />
     </>
   );
 }

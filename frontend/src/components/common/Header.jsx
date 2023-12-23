@@ -31,7 +31,9 @@ export default function Header() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <Link to="/">Home</Link>
+              <Link className="link" to="/">
+                Home
+              </Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -100 }}
@@ -42,7 +44,9 @@ export default function Header() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <Link to="/skills">Skills</Link>
+              <Link className="link" to="/skills">
+                Skills
+              </Link>
             </motion.li>
 
             <motion.li
@@ -54,7 +58,9 @@ export default function Header() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <Link to="/projects">Projects</Link>
+              <Link className="link" to="/projects">
+                Projects
+              </Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -100 }}
@@ -65,7 +71,24 @@ export default function Header() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <a href="#">Contact</a>
+              <Link className="link" to="/contact">
+                Contact
+              </Link>
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1,
+                delay: 1.6,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              <div className="btn">
+                <Link className="loginText" to="/login">
+                  Login
+                </Link>
+              </div>
             </motion.li>
           </ul>
         </div>

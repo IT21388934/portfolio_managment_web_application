@@ -1,10 +1,13 @@
 import skillDta from "../../data/skillDta";
+import Header from "../common/Header";
+
 import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
     <>
+      <Header />
       <div className="container">
         <motion.div
           className="titleSection"
@@ -16,9 +19,9 @@ export default function Skills() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <hr className="line" />
+          {/* <hr className="line" /> */}
           <div className="title">Skills</div>
-          <hr className="line" />
+          {/* <hr className="line" /> */}
         </motion.div>
         <br />
         <div className="skillsContainer">

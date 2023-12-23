@@ -1,0 +1,24 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+
+  padding: 20px 0px 0px 0px;
+
+  p {
+    margin: 0px;
+    font-size: 20px;
+  }
+  /* color: #333; */
+}
+
+.info-item i {
+  margin-right: 10px;
+}
