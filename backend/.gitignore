@@ -4,6 +4,7 @@
 *.env.local
 *.env.staging
 backend/.env
+.env
 logs
 *.log
 npm-debug.log*
