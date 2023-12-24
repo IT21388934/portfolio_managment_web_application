@@ -16,20 +16,19 @@ import SignUp from "./components/other/SingUp";
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [isLoading, setIsLoading] = useState(true);
+  const [isloading, setIsloading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
+      setIsloading(false);
     }, 5000);
-  }, [isLoading]);
+  }, [isloading]);
 
   return (
     <>
-      {/* <div className="mainContainer"></div> */}
-      {isLoading ? (
+      {isloading ? (
         <div className="loadingContainer">
-          <HashLoader color="#5ce6d4" size={50} isLoading={isLoading} />
+          <HashLoader color="#5ce6d4" size={50} isloading={isloading} />
         </div>
       ) : (
         <BrowserRouter>

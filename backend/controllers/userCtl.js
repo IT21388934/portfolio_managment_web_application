@@ -106,11 +106,10 @@ exports.login = async (req, res) => {
           { expiresIn: "1d" }
         );
 
-        const { password, ...others } = user._doc;
-        res.status(200).json({
+        res.status(201).json({
           success: true,
           message: "Login successful",
-          user: others,
+          user: user,
           accessToken,
         });
       }

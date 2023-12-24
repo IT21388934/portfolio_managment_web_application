@@ -8,7 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { TiSocialFlickr } from "react-icons/ti";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
+// import { useSelector } from "react-redux";
 import Header from "../components/common/Header";
 // import { useState } from "react";
 export default function HomeScreen() {
@@ -16,6 +16,19 @@ export default function HomeScreen() {
   const [isLinkedinHover, setIsLinkedinHover] = useState(false);
   const [isFacebookHover, setIsFacebookHover] = useState(false);
   const [isFlickrHover, setIsFlickrHover] = useState(false);
+
+  // const user = useSelector((state) => state.user.currentUser);
+  // if (user) {
+  //   console.log(user.accessToken);
+  // }
+  const myData = localStorage.getItem("userState");
+
+  if (myData) {
+    const parsedData = JSON.parse(myData);
+    console.log("Parsed data:", parsedData);
+  } else {
+    console.log("No data found in localStorage");
+  }
 
   return (
     <>
