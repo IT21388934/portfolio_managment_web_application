@@ -23,12 +23,16 @@ export default function HomeScreen() {
   // }
   const myData = localStorage.getItem("userState");
 
-  if (myData) {
-    const parsedData = JSON.parse(myData);
-    console.log("Parsed data:", parsedData);
-  } else {
-    console.log("No data found in localStorage");
-  }
+  // if (myData) {
+  //   const parsedData = JSON.parse(myData);
+  //   // console.log("Parsed data:", parsedData);
+  //   console.log(parsedData.currentUser.accessToken);
+  // } else {
+  //   console.log("No data found in localStorage");
+  // }
+
+  const token = myData ? JSON.parse(myData).currentUser.accessToken : null;
+  console.log(token);
 
   return (
     <>

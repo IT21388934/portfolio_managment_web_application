@@ -1,0 +1,55 @@
+.adminProjectCardContainer {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+.adminProjectCardContainer:hover {
+  box-shadow: 0 0 10px rgba(100, 100, 100, 2);
+}
+
+.adminProjectCardImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  position: relative;
+}
+.imgContainer {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  position: relative;
+}
+.adminProjectCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adminProjectCardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5ce6d4;
+  padding: 10px;
+}
+
+.adminProjectCardDesc {
+  font-size: 16px;
+  max-height: 4.5em; /* Adjust as needed */
+  overflow: hidden;
+  font-weight: 400;
+  color: white;
+  padding: 0px 5px;
+}

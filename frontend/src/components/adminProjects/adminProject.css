@@ -1,0 +1,68 @@
+.tabTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin: auto;
+}
+.adminProjectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.tabHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 40px;
+  gap: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  /* top: 0; */
+  margin-bottom: 10px;
+}
+.plusIcon {
+  font-size: 20px;
+  color: #5ce6d4;
+
+  cursor: pointer;
+}
+
+.addProjectTxt {
+  font-size: 18px;
+  /* color: #5ce6d4; */
+}
+
+.projectContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+  margin-top: 40px;
+}
+.tabHeaderContainer {
+  width: 100%;
+}
+
+.alink2 {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}

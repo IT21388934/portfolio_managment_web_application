@@ -40,19 +40,16 @@ nav {
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
+  position: relative;
 }
-.normal li {
+.normalli {
   padding: 0px 50px;
   cursor: pointer;
 }
 
-.normal li:last-child {
+/* .normal li:last-child {
   padding: 0 0 0 40px;
-}
-.dropdown {
-  visibility: hidden;
-  height: 0px;
-}
+} */
 
 .link {
   text-decoration: none;
@@ -74,4 +71,54 @@ nav {
 .loginText {
   color: #fff;
   text-decoration: none;
+}
+
+.dropDown {
+  background-color: #0a2645;
+  position: absolute;
+  top: 54px;
+  right: 0px;
+  margin-right: 74px;
+  border-radius: 5px;
+}
+
+.dropDownUl {
+  list-style-type: none;
+
+  padding: 5px;
+}
+
+.dropDownLi {
+  padding: 10px 80px;
+
+  text-decoration: none;
+}
+
+.dropDownLink {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 0px;
+  align-items: center;
+}
+.dropDownLink:hover {
+  color: #5ce6d4;
+  /* padding: 8px; Example: Increase padding on hover */
+  border-bottom: 2px solid #5ce6d4;
+  /* border-radius: 5px; */
+}
+.dropHr {
+  /* width: 100%; */
+  border: 1px solid #fff;
+  /* Add margin to separate the elements */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
 }

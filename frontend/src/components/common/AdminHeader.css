@@ -1,0 +1,150 @@
+/**.navbar {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 80px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 999;
+}
+
+.dropbtn {
+  background-color: #5ce6d4;
+  color: #1d2f43;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  font-size: 50px; 
+  clip-path: circle(50% at 50% 50%); /
+  
+  border: none; 
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+  /* margin-top: 50px; 
+}
+.dashDropDown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+.DashboardTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.dropdown-content {
+  width: 110px;
+  border-radius: 10px;
+  font-size: 18px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  top: 40px;
+  background-color: #1d2f43;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.adDropdownLinks {
+  /* margin-bottom: 10px; 
+  gap: 10px;
+  padding: 5px;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.adDropdownLinks:hover {
+  color: #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+}
+*/
+
+.navbar {
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 5; */
+  /* padding: 0px 80px; */
+}
+
+.adminWrapper {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.dashDropDown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+.DashboardTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.dropdown-content {
+  width: 110px;
+  border-radius: 10px;
+  font-size: 18px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  top: 40px;
+  background-color: #1d2f43;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.adDropdownLinks {
+  gap: 10px;
+  padding: 5px;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.adDropdownLinks:hover {
+  color: #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+}
+.dropbtn {
+  background-color: #5ce6d4;
+  color: #1d2f43;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 50px;
+  clip-path: circle(50% at 50% 50%);
+
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

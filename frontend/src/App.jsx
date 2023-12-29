@@ -13,10 +13,24 @@ import Skills from "./components/other/Skills";
 import ContactScreen from "./screens/ContactScreen";
 import Login from "./components/other/Login";
 import SignUp from "./components/other/SingUp";
+import ProfileScreen from "./screens/ProfileScreen";
+import AdminDashboard from "./screens/AdminDashboard";
+import AddProjects from "./screens/AddProjects";
 
 function App() {
   // const [count, setCount] = useState(0)
   const [isloading, setIsloading] = useState(true);
+
+  const user = localStorage.getItem("userState");
+  // console.log(user);
+  // const currentUser = JSON.parse(user).currentUser;
+  // const userInfo = currentUser ? currentUser.user : null;
+  // console.log(userInfo);
+
+  const userData = user ? JSON.parse(user).currentUser.user : null;
+  console.log({ userData: userData });
+
+  const isAdmin = userData ? userData.isAdmin : false;
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,6 +54,12 @@ function App() {
             <Route path="/projects" element={<ProjectScreen />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<ContactScreen />} />
+            {/* <Route path="/profile" element={<ProfileScreen />} /> */}
+            <Route
+              path="/profile"
+              element={isAdmin ? <AdminDashboard /> : <ProfileScreen />}
+            />
+            <Route path="/profile/admin/addProject" element={<AddProjects />} />
           </Routes>
         </BrowserRouter>
       )}

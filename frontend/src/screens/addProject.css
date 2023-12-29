@@ -1,0 +1,85 @@
+/* .bgImage {
+  background-image: url("../assets/images/addprojectbg.png");
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+} */
+.addProjectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  /* background-color: aqua; */
+}
+
+.projectFormContainer {
+  /* height: 400px; */
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  margin: auto;
+  padding: 40px;
+  box-shadow: 0 0 10px 0 rgba(219, 244, 250, 0.2);
+}
+
+.formHeader {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  margin-bottom: 20px;
+  background-color: #5ce6d4;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #003352;
+}
+.formBtn:hover {
+  font-weight: bolder;
+}
+
+.closeBtn {
+  font-size: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5px;
+  background-color: #5ce6d4;
+  color: #003352; /* Adding transition effect */
+}
+
+.closeIcon {
+  display: flex;
+}

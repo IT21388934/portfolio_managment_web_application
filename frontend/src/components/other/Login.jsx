@@ -5,12 +5,18 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 // import { publicRequest } from "../../../requestMethods";
 import { login } from "../../redux/apiCalls";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+
+  const { error, isAuthenticating } = useSelector((state) => state.user);
+
+  if (isAuthenticating) {
+    window.location.href = "/";
+  }
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -71,10 +77,15 @@ export default function LoginScreen() {
                   <button className="btn" type="submit" onClick={handleLogin}>
                     Login
                   </button>
-                  <div>
-                    <Link to="/">Back to Home</Link>
-                  </div>
                 </form>
+                {error && (
+                  <span style={{ color: "red", marginTop: "10px" }}>
+                    Something went wrong!
+                  </span>
+                )}
+                <div>
+                  <Link to="/">Back to Home</Link>
+                </div>
               </div>
             </motion.div>
           </div>

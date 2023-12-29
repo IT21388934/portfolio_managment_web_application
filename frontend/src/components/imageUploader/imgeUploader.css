@@ -1,0 +1,103 @@
+.choseFile {
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.choseFile:focus {
+  outline: none;
+}
+
+.choseFile::before {
+  content: "Choose File";
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.choseFile:hover {
+  background-color: #2980b9;
+}
+
+.customFileInput {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hide the default file input text */
+.customFileInput input {
+  display: none;
+}
+
+.imageUploader {
+  /* width: 100%; */
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.insideText {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.drop-zone {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.selectedImageContainer {
+  width: auto;
+  height: 180px;
+  border-radius: 8px;
+  /* margin-bottom: 20px; */
+  position: relative;
+}
+.selectedImage {
+  width: auto;
+  height: 180px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.trash-can-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.selectedImageContainer:hover .trash-can-overlay {
+  opacity: 1;
+}
+
+.trash-can-icon {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}

@@ -18,6 +18,8 @@ const userSlice = createSlice({
       state.currentUser = action.payload;
       state.isAuthenticating = true;
       localStorage.setItem("userState", JSON.stringify(state));
+      state.error = false;
+
       // console.log("currentUser: ", state.currentUser);
     },
     loginFailure: (state) => {
