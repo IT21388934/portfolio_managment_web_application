@@ -20,7 +20,7 @@
 
 .projectFormContainer {
   /* height: 400px; */
-  width: 80%;
+  width: 60%;
   flex-direction: column;
   justify-content: center;
   border-radius: 8px;
@@ -82,4 +82,78 @@
 
 .closeIcon {
   display: flex;
+}
+
+.inputContainer {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-options {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #003352;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.dropdown-options-li {
+  width: 100%;
+  font-size: 16px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  /* width: 100%; */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  align-self: center;
+  text-align: center;
+}
+
+.dropdown-options-li:hover {
+  background-color: #5ce6d4;
+  color: #003352;
+}
+.dropdown-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.rotate-icon {
+  transform: rotate(180deg); /* Adjust the rotation angle as needed */
+}
+
+.validationError {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.labelAndError {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

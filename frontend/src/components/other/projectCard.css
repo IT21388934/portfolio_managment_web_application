@@ -23,7 +23,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
   }
   img:hover {
     opacity: 1;
@@ -78,4 +78,13 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 40px;
+}
+
+.btnContainer2 a {
+  text-decoration: none;
+  color: #5ce6d4;
+}
+
+.btnContainer2 a:hover {
+  color: #fff;
 }

@@ -16,11 +16,32 @@ export default function ProjectCard({ project }) {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <div className="projectCardTitle">{project.name}</div>
+          <div className="projectCardTitle">{project.title}</div>
           <div className="projectCardDesc">{project.description}</div>
           <div className="btnContainer2">
-            <div className="btn">Github</div>
-            <div className="btn">Live</div>
+            <div className="btn">
+              <a
+                // className="link"
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
+            <div className="btn">
+              <a
+                // className="link"
+                {...(project.liveLink === ""
+                  ? null
+                  : "href={project.liveLink}")}
+                // href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>
+            </div>
           </div>
         </motion.div>
         <motion.div
@@ -33,7 +54,7 @@ export default function ProjectCard({ project }) {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <img src={project.img} alt={project.name} />
+          <img src={project.image} alt={project.title} />
         </motion.div>
       </div>
     </>

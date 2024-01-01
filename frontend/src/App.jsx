@@ -16,7 +16,7 @@ import SignUp from "./components/other/SingUp";
 import ProfileScreen from "./screens/ProfileScreen";
 import AdminDashboard from "./screens/AdminDashboard";
 import AddProjects from "./screens/AddProjects";
-
+import ImgUploadTest from "./screens/imgUploadTest";
 function App() {
   // const [count, setCount] = useState(0)
   const [isloading, setIsloading] = useState(true);
@@ -60,6 +60,7 @@ function App() {
               element={isAdmin ? <AdminDashboard /> : <ProfileScreen />}
             />
             <Route path="/profile/admin/addProject" element={<AddProjects />} />
+            <Route path="/imgUploadTest" element={<ImgUploadTest />} />
           </Routes>
         </BrowserRouter>
       )}
