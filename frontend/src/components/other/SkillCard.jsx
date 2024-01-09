@@ -19,7 +19,7 @@ export default function SkillCard({ skill }) {
         onMouseLeave={() => setIsSkillHover(false)}
       >
         <div className="skillCard__icon">
-          <img src={skill.img} alt="icon" className="skillIcon" />
+          <img src={skill.image} alt="icon" className="skillIcon" />
         </div>
         <div className="skillCard__title">{skill.name}</div>
         {isSkillHover && (

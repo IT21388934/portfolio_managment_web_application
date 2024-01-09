@@ -17,6 +17,9 @@ import ProfileScreen from "./screens/ProfileScreen";
 import AdminDashboard from "./screens/AdminDashboard";
 import AddProjects from "./screens/AddProjects";
 import ImgUploadTest from "./screens/imgUploadTest";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/ReactToastify.min.css";
 function App() {
   // const [count, setCount] = useState(0)
   const [isloading, setIsloading] = useState(true);
@@ -40,6 +43,18 @@ function App() {
 
   return (
     <>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       {isloading ? (
         <div className="loadingContainer">
           <HashLoader color="#5ce6d4" size={50} isloading={isloading} />

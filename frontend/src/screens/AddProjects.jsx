@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/ReactToastify.min.css";
 import { userRequest } from "../../requestMethods";
 import { projectValidation } from "../../validations/addProjectValidation/projectValidation";
@@ -35,11 +35,6 @@ function AddProjects() {
     setSelectedOption(option);
     setIsOpen(false);
   };
-
-  // if (imageUrl) {
-  //   console.log("image url is set");
-  //   console.log({ imageUrl: imageUrl });
-  // }
 
   const handleAddProduct = async (e) => {
     e.preventDefault();
@@ -107,7 +102,7 @@ function AddProjects() {
 
   return (
     <>
-      <ToastContainer
+      {/* <ToastContainer
         position="top-center"
         autoClose={5000}
         hideProgressBar={false}
@@ -118,7 +113,7 @@ function AddProjects() {
         draggable
         pauseOnHover
         theme="dark"
-      />
+      /> */}
       <div className="bgImage">
         <div className="addProjectContainer">
           <motion.div

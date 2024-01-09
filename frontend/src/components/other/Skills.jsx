@@ -1,10 +1,30 @@
-import skillDta from "../../data/skillDta";
+// import skillDta from "../../data/skillDta";
 import Header from "../common/Header";
+import { publicRequest } from "../../../requestMethods";
 
 import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Skills() {
+  const isSkillEditable = false;
+  const [skillData, setSkillData] = useState([]);
+
+  const getSkills = async () => {
+    try {
+      const response = await publicRequest.get("/skills/getall");
+      // console.log(response);
+      const { skills, success, message } = response.data;
+      console.log(skills, success, message);
+      setSkillData(skills);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getSkills();
+  }, []);
   return (
     <>
       <Header />
@@ -25,8 +45,12 @@ export default function Skills() {
         </motion.div>
         <br />
         <div className="skillsContainer">
-          {skillDta.map((skill) => (
-            <SkillCard key={skill.id} skill={skill} />
+          {skillData.map((skill) => (
+            <SkillCard
+              key={skill._id}
+              skill={skill}
+              isSkillEditable={isSkillEditable}
+            />
           ))}
         </div>
       </div>
