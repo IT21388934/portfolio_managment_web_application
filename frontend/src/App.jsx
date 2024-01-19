@@ -25,10 +25,6 @@ function App() {
   const [isloading, setIsloading] = useState(true);
 
   const user = localStorage.getItem("userState");
-  // console.log(user);
-  // const currentUser = JSON.parse(user).currentUser;
-  // const userInfo = currentUser ? currentUser.user : null;
-  // console.log(userInfo);
 
   const userData = user ? JSON.parse(user).currentUser.user : null;
   console.log({ userData: userData });
@@ -44,7 +40,7 @@ function App() {
   return (
     <>
       <ToastContainer
-        position="top-center"
+        position="top-right"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}

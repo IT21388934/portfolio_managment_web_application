@@ -3,7 +3,7 @@ import userReducer from "./userRedux";
 import adminTabReducer from "./adminTabRedux";
 
 // import store from "./store";
-const persistedAuthState = localStorage.getItem("authState");
+const persistedAuthState = localStorage.getItem("userState");
 const preloadedState = persistedAuthState ? JSON.parse(persistedAuthState) : {};
 
 const store = configureStore({

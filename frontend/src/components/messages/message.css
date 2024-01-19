@@ -1,0 +1,181 @@
+.centeredDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.msgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.msgContainerBlur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  filter: blur(5px);
+  pointer-events: none;
+  position: relative;
+}
+.msgCardContainer {
+  width: 100%;
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 10px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(3, 31, 60);
+  box-shadow: 0px 0px 5px 0px rgba(251, 251, 251, 0.2);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.msgCardContainerRead {
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(251, 251, 251, 0.2);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.singleMsgPopUpContainer {
+  width: 80%;
+  /* height: 80%; */
+  background-color: rgb(51, 55, 88);
+  z-index: 4;
+  padding: 30px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.msgCardIcon {
+  background-color: transparent;
+
+  color: #5ce6d4;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  margin-right: 20px;
+}
+
+.msgCardIcon :hover {
+  background-color: #5ce6d4;
+  border-radius: 50%;
+  padding: 5px;
+  color: #01172e;
+  position: relative;
+}
+
+.msgCardIconHovered {
+  background-color: #5ce6d4;
+  /* border-radius: 50%; */
+  padding: 5px 10px;
+  color: #01172e;
+  position: absolute;
+  top: 50px;
+  right: 0%;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 2;
+}
+.msgInfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  margin: 20px 20px;
+}
+.senderName {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.sortAndSearchHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  /* height: 60px; */
+  /* padding: 0px 40px; */
+  margin-bottom: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(3, 31, 60);
+  padding: 0px 10px;
+  margin-right: 20px;
+}
+.searchBox {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px 10px;
+  margin-bottom: 0px;
+}
+
+.searchBox :focus {
+  outline: none;
+}
+
+.singleMsgPopUpBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  border: 1px solid #5ce6d444;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.msgPopUpCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}

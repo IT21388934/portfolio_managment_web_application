@@ -18,6 +18,12 @@ const userSlice = createSlice({
       state.currentUser = action.payload;
       state.isAuthenticating = true;
       localStorage.setItem("userState", JSON.stringify(state));
+      // Set a timer to clear local storage after half day
+
+      setTimeout(() => {
+        localStorage.removeItem("userState");
+      }, 43200000);
+
       state.error = false;
 
       // console.log("currentUser: ", state.currentUser);

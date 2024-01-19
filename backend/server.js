@@ -40,7 +40,10 @@ app.use("/api/projects", projectRoute);
 
 const skillRoute = require("./routes/skilRoutes");
 app.use("/api/skills", skillRoute);
-//cloudinary APIs
 
+const messageRoute = require("./routes/messageRoute");
+app.use("/api/messages", messageRoute);
+
+//cloudinary APIs
 const imageRoute = require("./routes/imageRoute");
 app.use("/api/image", imageRoute);

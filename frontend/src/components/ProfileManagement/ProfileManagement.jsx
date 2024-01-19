@@ -390,7 +390,6 @@ function ProfileManagement() {
           </div>
         </>
       )}
-
       {addSkillPopUp && (
         <>
           <div className="editPopContainer">
