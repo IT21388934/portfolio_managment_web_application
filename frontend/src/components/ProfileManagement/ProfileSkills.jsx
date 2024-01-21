@@ -51,7 +51,7 @@ function ProfileSkills({ setEditPopUp, skill, setEditData }) {
               }}
             >
               <div className="skillCard__pres">
-                {skill.percentage ? skill.percentage : "N/A"}
+                {skill.percentage ? `${skill.percentage}%` : "N/A"}
               </div>
             </motion.div>
           )}

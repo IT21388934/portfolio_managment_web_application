@@ -34,7 +34,7 @@ export default function SkillCard({ skill }) {
             }}
           >
             <div className="skillCard__pres">
-              {skill.percentage ? skill.percentage : "N/A"}
+              {skill.percentage ? `${skill.percentage}%` : "N/A"}
             </div>
           </motion.div>
         )}

@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { useState } from "react";
-import { userRequest } from "../../requestMethods";
+import { publicRequest } from "../../requestMethods";
 
 import { successMessage, errorMessage } from "../toastMessage/toastMessage";
 
@@ -26,7 +26,7 @@ export default function ContactScreen() {
     };
     // console.log(messageInfo);
     try {
-      const response = await userRequest.post("/messages/add", messageInfo);
+      const response = await publicRequest.post("/messages/add", messageInfo);
       const { success, message, savedMessage } = response.data;
       console.log({
         success: success,

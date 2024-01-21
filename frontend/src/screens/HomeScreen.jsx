@@ -155,7 +155,15 @@ export default function HomeScreen() {
               }}
             >
               <FiGithub className="hoveredIcon" />
-              {isGithubHover && <div className="socialMediaName">Github</div>}
+              {isGithubHover && (
+                <a
+                  href="https://github.com/IT21388934"
+                  target="blank"
+                  className="socialMediaName"
+                >
+                  Github
+                </a>
+              )}
             </motion.div>
             <motion.div
               className="socialMedia"
@@ -171,7 +179,13 @@ export default function HomeScreen() {
             >
               <FaLinkedinIn className="hoveredIcon" />
               {isLinkedinHover && (
-                <div className="socialMediaName">LinkedIn</div>
+                <a
+                  href="https://www.linkedin.com/in/rumesh-siriwardhana-38100b18b/"
+                  target="blank"
+                  className="socialMediaName"
+                >
+                  LinkedIn
+                </a>
               )}
             </motion.div>
             <motion.div
@@ -188,7 +202,13 @@ export default function HomeScreen() {
             >
               <FaFacebookF className="hoveredIcon" />
               {isFacebookHover && (
-                <div className="socialMediaName">Facebook</div>
+                <a
+                  href="https://web.facebook.com/rumesh.siriwardhana.10/"
+                  target="blank"
+                  className="socialMediaName"
+                >
+                  Facebook
+                </a>
               )}
             </motion.div>
             <motion.div
@@ -204,7 +224,15 @@ export default function HomeScreen() {
               }}
             >
               <TiSocialFlickr className="hoveredIcon" />
-              {isFlickrHover && <div className="socialMediaName">Flickr</div>}
+              {isFlickrHover && (
+                <a
+                  href="https://www.flickr.com/photos/191976934@N02/"
+                  target="blank"
+                  className="socialMediaName"
+                >
+                  Flicker
+                </a>
+              )}
             </motion.div>
           </div>
         </div>

@@ -49,17 +49,42 @@ function ProfileManagement() {
     getSkills();
   }, []);
 
-  const handleSaveEdits = () => {
+  const handleSaveEdits = async () => {
     console.log("save edits");
     console.log({ editData: editData });
-    skills.map((skills) => {
-      if (skills.id === editData.id) {
-        skills.name = editData.name;
-        skills.percentage = editData.percentage;
-      }
+    // skills.map((skills) => {
+    //   if (skills.id === editData.id) {
+    //     skills.name = editData.name;
+    //     skills.percentage = editData.percentage;
+    //   }
 
-      return skills;
-    });
+    //   return skills;
+    // });
+
+    try {
+      const response = await userRequest.put(`/skills/update/${editData._id}`, {
+        name: editData.name,
+        image: editData.image ? editData.image : imgUrl,
+        percentage: editData.percentage,
+        cloudinaryId: editData.cloudinaryId,
+      });
+      const { skill, success, message } = response.data;
+      console.log({ skill, success, message });
+      if (success) {
+        getSkills();
+        setEditPopUp(false);
+        successMessage(message);
+        setSelectedImage(null);
+        setEditData({});
+        setImgUrl("");
+        setImgPublicId(null);
+      }
+    } catch (error) {
+      console.log(error);
+      const { message } = error.response.message;
+      errorMessage(message);
+    }
+
     setEditData({});
     setEditPopUp(false);
   };
@@ -209,6 +234,13 @@ function ProfileManagement() {
     }
   };
 
+  const handleEditPopUpClose = () => {
+    setEditPopUp(false);
+    setEditData({});
+    setImgUrl("");
+    setImgPublicId(null);
+  };
+
   return (
     <>
       <div
@@ -287,10 +319,7 @@ function ProfileManagement() {
       {editPopUp && (
         <>
           <div className="editPopContainer">
-            <div
-              className="skillEditCloseBtn"
-              onClick={() => setEditPopUp(false)}
-            >
+            <div className="skillEditCloseBtn" onClick={handleEditPopUpClose}>
               X
             </div>
             <div className="editPopUpContent">
@@ -308,6 +337,26 @@ function ProfileManagement() {
                       <div className="selectedSkillImageContainer">
                         <img
                           src={`${editData.image}`}
+                          className="selectedSkillImage"
+                          alt="Selected"
+                        />
+                        <div className="trash-can-SkillOverlay">
+                          <span
+                            className="trash-can-icon"
+                            // onClick={setEditData({ ...editData, image: "" })}
+                            onClick={() => {
+                              setEditData({ ...editData, image: "" });
+                              console.log("delete image");
+                            }}
+                          >
+                            <MdDeleteOutline />
+                          </span>
+                        </div>
+                      </div>
+                    ) : imgUrl ? (
+                      <div className="selectedSkillImageContainer">
+                        <img
+                          src={`${imgUrl}`}
                           className="selectedSkillImage"
                           alt="Selected"
                         />
