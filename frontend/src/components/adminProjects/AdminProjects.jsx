@@ -4,6 +4,7 @@ import TabHeader from "../admniDashCom/TabHeader";
 import AdminProjectCard from "../AdminProjectCard/AdminProjectCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { successMessage, errorMessage } from "../../toastMessage/toastMessage";
 
 function AdminProjects() {
   const [projectsData, setProjectsData] = useState([]);
@@ -36,7 +37,7 @@ function AdminProjects() {
       setProjectsData(projects);
     } catch (error) {
       console.error(error);
-      alert(error.message);
+      errorMessage(error.message);
     }
   };
 
@@ -90,8 +91,10 @@ function AdminProjects() {
           const cloudinaryId = deletedProject.cloudinaryId;
           handleRemoveImg(cloudinaryId);
           getProjects();
+          successMessage(response.data.message);
         } else {
-          alert(response.data.message);
+          // alert(response.data.message);
+          errorMessage(response.data.message);
         }
       }
     } catch (error) {

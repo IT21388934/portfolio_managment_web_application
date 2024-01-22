@@ -51,7 +51,7 @@ exports.addProject = async (req, res) => {
 //get all project
 exports.getAllProjects = async (req, res) => {
   try {
-    const projects = await Project.find();
+    const projects = await Project.find().sort({ createdAt: -1 });
     if (!projects) {
       return res.status(404).json({
         success: false,

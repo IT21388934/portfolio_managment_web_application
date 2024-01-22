@@ -241,7 +241,8 @@
   background-color: rgb(51, 55, 88);
   z-index: 4;
   padding: 30px;
-  position: relative;
+  position: fixed;
+  top: 20%;
   border-radius: 10px;
 }
 

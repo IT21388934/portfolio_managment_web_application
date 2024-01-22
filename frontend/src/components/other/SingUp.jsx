@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/ReactToastify.min.css";
 import { publicRequest } from "../../../requestMethods";
+import {
+  successMessage,
+  errorMessage,
+  warnMessage,
+} from "../../toastMessage/toastMessage";
 
 export default function SignUp() {
+  const navigate = useNavigate();
   //set data
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -37,6 +42,7 @@ export default function SignUp() {
         setEmail("");
         setPassword("");
         setConfirmPassword("");
+        navigate("/login");
       } catch (err) {
         const data = err.response.data;
         const message = data.message;
@@ -49,52 +55,8 @@ export default function SignUp() {
 
   //Toast messages
 
-  const successMessage = (message) => {
-    toast.success(message, {
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
-  const errorMessage = (message) => {
-    toast.error(message, {
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      theme: "dark",
-      progress: undefined,
-    });
-  };
-
-  const warnMessage = (message) => {
-    toast.warn(message, {
-      hideProgressBar: false,
-      closeOnClick: true,
-      theme: "dark",
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-  };
-
   return (
     <>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
       <div className="container2">
         <div className="loginOrSignUpContainer">
           <div className="optionContainer">

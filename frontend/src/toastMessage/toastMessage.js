@@ -21,3 +21,14 @@ export const errorMessage = (message) => {
     progress: undefined,
   });
 };
+
+export const warnMessage = (message) => {
+  toast.warn(message, {
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark",
+    progress: undefined,
+  });
+};

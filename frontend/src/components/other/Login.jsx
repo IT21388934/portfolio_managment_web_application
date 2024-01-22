@@ -83,8 +83,10 @@ export default function LoginScreen() {
                     Something went wrong!
                   </span>
                 )}
-                <div>
-                  <Link to="/">Back to Home</Link>
+                <div style={{ marginTop: "10px" }}>
+                  <Link style={{ color: "lightblue", fontSize: "14px" }} to="/">
+                    Back to Home
+                  </Link>
                 </div>
               </div>
             </motion.div>

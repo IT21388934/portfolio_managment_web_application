@@ -8,10 +8,21 @@
 .whiteText {
   color: white;
 }
-h3 {
+/* h3 {
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 600;
+} */
+
+/* .homeIcon {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+} */
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
 }
 nav {
   /* width: 100%; */

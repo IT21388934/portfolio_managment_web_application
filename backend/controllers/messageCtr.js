@@ -27,7 +27,7 @@ exports.getAllMessages = async (req, res) => {
   try {
     verifyAndAuth(req, res, async () => {
       try {
-        const messages = await Message.find();
+        const messages = await Message.find().sort({ createdAt: -1 });
         if (!messages) {
           return res.status(404).json({
             success: false,

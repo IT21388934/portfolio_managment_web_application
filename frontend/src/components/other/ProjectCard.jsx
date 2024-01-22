@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             duration: 2,
-            delay: 0.8,
+            delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
@@ -50,7 +50,7 @@ export default function ProjectCard({ project }) {
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           transition={{
             duration: 2,
-            delay: 0.8,
+            delay: 0.5,
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >

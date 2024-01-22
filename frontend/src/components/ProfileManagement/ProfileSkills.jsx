@@ -16,7 +16,7 @@ function ProfileSkills({ setEditPopUp, skill, setEditData }) {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             duration: 2,
-            delay: 1.2,
+            delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01],
           }}
           onMouseEnter={() => setIsSkillHover(true)}

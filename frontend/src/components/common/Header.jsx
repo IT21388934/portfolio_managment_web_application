@@ -3,6 +3,7 @@ import "./Header.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/favicon.ico";
 // import AnimatePresence from "framer-motion";
 
 export default function Header() {
@@ -24,8 +25,8 @@ export default function Header() {
   return (
     <div className="header">
       <nav>
-        <motion.h3
-          className="whiteText"
+        <motion.div
+          className="homeIcon"
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -34,8 +35,10 @@ export default function Header() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          Rumesh Siriwardhana .
-        </motion.h3>
+          <Link className="link" to="/">
+            <img src={logo} alt="Logo" className="logo" />
+          </Link>
+        </motion.div>
         <div className="navigations">
           <i className="fa-solid fa-bars"></i>
           <ul className="normal">
